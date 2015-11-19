@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -38,7 +38,7 @@ namespace TaxiPark
             FileStream fs = new FileStream(carFile, FileMode.OpenOrCreate, FileAccess.Write);
             TextWriter textWriter = new StreamWriter(fs);
             serializer.Serialize(textWriter, CarList.First());
-            Console.WriteLine("Car is serialized to XML");
+            Console.WriteLine("\nCar is serialized to XML");
             textWriter.Close();
         }
 
@@ -48,14 +48,14 @@ namespace TaxiPark
             FileStream fs = new FileStream(carFile, FileMode.Open);
             TextReader textReader = new StreamReader(fs);
             Car c = (Car)deserializer.Deserialize(textReader);
-            Console.Write("\nData from XML File: \n{0}\t{1}\t{2}\t{3}\t{4}\t{5}", c.carColor, c.carType, c.carPrice, c.carFuelConsumption, c.carRate, c.carNumber);
+            Console.Write("\nData from XML File: \n{0}\t{1}\t{2}\t{3}\t{4}\t{5}\n", c.carColor, c.carType, c.carPrice, c.carFuelConsumption, c.carRate, c.carNumber);
             textReader.Close();
         }
 
         public void SerializeToJson()
         {
             string actualJsonForCars = JsonConvert.SerializeObject(CarList);
-            Console.WriteLine("Cars are serialized to Json:\n" +actualJsonForCars);
+            Console.WriteLine("\nCars are serialized to Json:\n\n" +actualJsonForCars);
 
             FileStream fs = new FileStream(carFile2, FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter sr = new StreamWriter(fs);
@@ -70,7 +70,7 @@ namespace TaxiPark
             StreamReader sr = new StreamReader(fs);
             string actualJsonForCars = sr.ReadToEnd();
             List<Car> actualCars = JsonConvert.DeserializeObject<List<Car>>(actualJsonForCars);
-            Console.WriteLine("\nCars are deserialized from Json:\n");
+            Console.WriteLine("\nCars are deserialized from Json:");
             foreach (Car c in actualCars)
             {
                 Console.Write("\n{0}\t{1}\t{2}\t{3}\t{4}\t{5}",
