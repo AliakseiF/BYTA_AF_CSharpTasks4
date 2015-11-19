@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseTask", "DataBaseTask\DataBaseTask.csproj", "{FCB747F5-76FF-4810-951C-986913EBD794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiPark", "TaxiPark\TaxiPark.csproj", "{A585C3D6-2F54-43CD-87A4-77DE9C6B0923}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCB747F5-76FF-4810-951C-986913EBD794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB747F5-76FF-4810-951C-986913EBD794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB747F5-76FF-4810-951C-986913EBD794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB747F5-76FF-4810-951C-986913EBD794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A585C3D6-2F54-43CD-87A4-77DE9C6B0923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A585C3D6-2F54-43CD-87A4-77DE9C6B0923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A585C3D6-2F54-43CD-87A4-77DE9C6B0923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A585C3D6-2F54-43CD-87A4-77DE9C6B0923}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
